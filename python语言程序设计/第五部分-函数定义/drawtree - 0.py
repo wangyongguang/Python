@@ -1,6 +1,6 @@
 # drawtree.py
 
-from turtle import Turtle, mainloop
+from turtle import Turtle
 
 def tree(plist, l, a, f):
     """ plist is list of pens

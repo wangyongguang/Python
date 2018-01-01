@@ -6,3 +6,4 @@ def test():
     rate = 0.05
     amount = addInterest(amount,rate)
     print(amount)
+test()
