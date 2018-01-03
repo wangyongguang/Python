@@ -1,0 +1,51 @@
+#1. 一级标题
+##2. 二级标题
+
+###3. 无序列表
+
+* 男孩
+* 女孩
+
+###4. 有序列表
+1. 男孩
+2. 女孩
+
+###5. 这里是引用（诗句）
+>一盏灯， 一片昏黄； 一简书，一杯淡茶。 守着那一份淡定，品读属于自己的寂寞。 保持淡定，才能欣赏到最美丽的风景！ 保持淡定，人生从此不再寂寞。
+
+###6. 图片与链接的区别在一个!号
+* 图片为：{感叹号+中括号+小括号}
+* 链接为：{中括号+小括号}
+###7. 比如插入链接
+1. [Baidu](http://baidu.com)
+###8. 比如插入图片
+![美丽花儿](http://ww2.sinaimg.cn/large/56d258bdjw1eugeubg8ujj21kw16odn6.jpg "美丽花儿")
+###9. 粗体与斜体
+* 用两个*包含一段文体就是粗体的语法
+1. **A**
+* 用一个*包含一段文体就是斜体
+2. *A*
+###10. 表格
+1. <table>
+2. <tr>
+3. <th rowspan="2">值班人员</th>
+4. <th>星期一</th>
+5. <th>星期二</th>
+6. <th>星期三</th>
+7. </tr>
+8. <tr>
+9. <td>李强</td>
+10. <td>张明</td>
+11. <td>王平</td>
+12. </tr>
+</table>
+###11. 代码框
+`protect void page_Load(object
+sender,EventArgs e)`
+  {
+        tbxOutput.text=
+        string.Format("OS:{1} ({2}=bit{0})"
+        CLR:{3}",`
+        Environment.NewLine,
+        Environment.OSversion`
+  }
