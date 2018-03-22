@@ -1,0 +1,8 @@
+###调用函数
+* Python内置很多函数，可以直接调用；如  
+[python内置函数](http://docs.python.org/3/library/functions.html#abs)
+* 数据类型转换：   
+    1. int('123')=123
+    2. int(12.34)=12
+    3. float/str/bool/等等
+###定义函数：用`def`语句

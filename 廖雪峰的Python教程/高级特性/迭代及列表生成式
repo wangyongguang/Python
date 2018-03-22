@@ -1,0 +1,20 @@
+###迭代：通过`for`来对`list或tuple`遍历
+* 如何判断一个对象是可迭代对象呢？  
+方法是通过collections模块的Iterable类型判断。
+----from collections import Iterable
+----isinstance('abc',Iterable)=true
+1. [x * x for x in range(1, 11)] 得  
+[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+2. [x * x for x in range(1, 11) if x % 2 == 0]得
+[4, 16, 36, 64, 100]
+3. 可以使用两层循环，可以生成全排列：    
+[m + n for m in 'ABC' for n in 'XYZ']得    
+['AX', 'AY', 'AZ', 'BX', 'BY', 'BZ', 'CX', 'CY', 'CZ']
+4. for循环其实可以同时使用两个甚至多个变量，比如dict的items()可以同时迭代key和value： 
+d = {'x': 'A', 'y': 'B', 'z': 'C' }
+ for k, v in d.items():
+... print(k, '=', v)
+...     
+y = B   
+x = A   
+z = C

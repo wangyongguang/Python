@@ -1,0 +1,20 @@
+###Python内置字典：dict
+* dict全称dictionary，也称map，使用key-value存储,放进去的时候必须根据key计算出value的位置。
+    1. `d = {'Michael':93,'Bob':85,'Trancy':99}  
+    ----d['Machael']= 93  `  
+    2. 通过**in**来判断key是否存在如：**'Thomas' in d**    return False表示没有
+    3. dict提供get(key)和pop(key)  
+    
+**与list相比，dict有以下特点：**
+1. 查找和插入速度极快，不会随着key的增加而变慢；
+2. 需要占用大量的内存
+
+**_而list与dict刚好相反_**    
+* 所以dict是用空间换时间，dict用在快速查找的地方，**在Python中正确使用dict非常重要，牢记一条
+就是dict的key必须是不可变对象。**
+###set
+1. set和dict类似，也是一组key集合但没有存储value。**在set中没有重复的key**。
+**要创建一个set，需提供一个list作为输入集合**    
+如：`s = set([1,2,3]),那么s = {1,2,3}`  
+`如果s = set([1,1,2,2,3,3]),那么s = {1,2,3}`
+2. `集合s添加元素s.add(key)和集合s删除元素s.remove(key)`

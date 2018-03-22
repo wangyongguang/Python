@@ -1,0 +1,29 @@
+##Python的两种循环
+1. **for x in y 循环 :**  就是把y中的每个元素带入变量x中，然后进行行缩进块语句，其中y可以是list和tuple
+**例如：**  
+names = ['Micael','Bob','Tracy']       
+for name in names:  
+----print(name)         
+    1. **python提供一个range()函数**  生成一个整数序列，再通过list()函数转换为list。
+    比如**list(range(5))=[0,1,2,3,4]**
+2. **while循环：** 只要满足条件，就不断循环直到条件满足退出循环。     
+**例如：**     
+sum = 0     
+n = 99  
+while n > 0 :   
+----sum = sum + n   
+----n = n-2     
+print(sum)
+
+3. **break：**   
+    在循环中**break**语句可以**提前退出循环**
+4. **continue：**    
+    也可以通过continue语句**跳过当前的循环**，直接开始下一次循环。
+    **例如：我们只打印奇数**  
+    n = 0   
+    while n < 10:   
+    ----n = n+1
+    if n % 2 == 0:
+    --------continue
+    print(n)
+   
