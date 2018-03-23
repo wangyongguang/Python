@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 def greedy():
     #Packet = [100,150,200,400,600,800,1200,1400,1600,1800,2000,2200] #待传输的数据包大小
-    np.random.seed(1) #确定种子使以后每次生成的随机数相同
-    Packet = np.random.randint(1,1471,5) #
+    np.random.seed(0) #确定种子使以后每次生成的随机数相同
+    Packet = np.random.randint(1,8193,5) #这里要注意：随机分布是每个数据包1-1471，或1-8192或这5个总和是8192
     print ( "原始数据包列表为：" , Packet )
     Frag_Packet =[] #分片后的数据包数组
     i,j = 0,0

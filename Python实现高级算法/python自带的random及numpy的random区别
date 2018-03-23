@@ -1,0 +1,23 @@
+### 1.python内建自带random
+    1.导入模块：import random
+    2.random.randint(1,100) 返回闭区间[1,100]范围内的整数值
+    3.random.random()生成[0,1)之间的随机浮点数，不包括1
+### 2.包numpy.random.randint(a,b)
+    1. np.random.randint(a,b)返回开区间[a,b)范围的数值
+    2.注意这两者的不同
+### 3.python中seed()函数
+    1.import random #seed()不能直接访问，需要导入random
+        random.seed(x)
+    2. x是改变随机数生成器的种子seed，当x不变，随机数不变
+        如random.seed(10)多次求的随机数都不变
+        random.random()=0.57140259469
+### 4.numpy中的uniform(low=0.0,high=1.0,size=None)
+    1.uniform在[low,high)上是半开的，不包括high
+    2.上面的randint(a,b)属于离散的整数均匀分布
+    
+### 5.random_intergers在闭区间[low,high]是离散均匀分布的
+
+### 6.random是random_sample的别名
+
+### 7.rand作为便利函数来接受输入的不同维数
+    1.如rand(2,2)将会产生2-by-2浮点数数组，在[0,1)上是均匀分布
